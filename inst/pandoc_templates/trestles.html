@@ -57,6 +57,19 @@
                   $endfor$
                 </ul>
               </div>
+              <div id="icon-list-new">
+                <ul class="list-inline">
+                  $for(icon)$
+                  <li class="icon-link">
+                    <a href=$icon.url$>
+                    <i class=$icon.class$>
+                    </i> 
+                      $icon.label$
+                    </a>
+                  </li>
+                  $endfor$
+                </ul>
+              </div>
             </div>
           </div>
         </div>
