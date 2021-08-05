@@ -59,12 +59,12 @@
               </div>
               <div id="icon-list-new">
                 <ul class="list-inline">
-                  $for(icon)$
+                  $for(icon.linkedin)$
                   <li class="icon-link">
-                    <a href=$icon.url$>
-                    <i class= $icon.class$>
+                    <a href=$icon.linkedin.url$>
+                    <i class= "fas fa-project-diagram">
                     </i> 
-                      $icon.label$
+                      $icon.linkedin.label$
                     </a>
                   </li>
                   $endfor$
