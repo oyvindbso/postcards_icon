@@ -131,13 +131,63 @@
             <div class="row justify-content-center align-items-center">
               <div class="col-8 p-1 text-center">
                 <div class="list-group">
-                  $for(links)$
-                  <a href=$links.url$>
-                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
-                      $links.label$
-                    </button>
-                  </a>
+                 <div id="icon-list-new">
+                <ul class="list-inline">
+                $for(twitter)$
+                  <li class="list-inline-item">
+                    <a href=$twitter.url$>
+                    <i class="fab fa-twitter fa-2x">
+                    </i> 
+                      $twitter.label$
+                    </a>
+                  </li>
                   $endfor$
+                  $for(orcid)$
+                  <li class="list-inline-item">
+                    <a href=$orcid.url$>
+                    <i class="ai ai-orcid fa-2x">
+                    </i> 
+                      $orcid.label$
+                    </a>
+                  </li>
+                  $endfor$
+                  $for(osf)$
+                  <li class="list-inline-item">
+                    <a href=$osf.url$>
+                    <i class="ai ai-osf fa-2x">
+                    </i> 
+                      $osf.label$
+                    </a>
+                  </li>
+                  $endfor$
+                $for(scholar)$
+                  <li class="list-inline-item">
+                    <a href=$scholar.url$>
+                    <i class="ai ai-google-scholar fa-2x">
+                    </i> 
+                      $scholar.label$
+                    </a>
+                  </li>
+                  $endfor$
+                $for(researchgate)$
+                  <li class="list-inline-item">
+                    <a href=$researchgate.url$>
+                    <i class="ai ai-researchgate fa-2x">
+                    </i> 
+                      $researchgate.label$
+                    </a>
+                  </li>
+                  $endfor$
+                   $for(academia)$
+                  <li class="list-inline-item">
+                    <a href=$academia.url$>
+                    <i class="ai ai-academia fa-2x">
+                    </i> 
+                      $academia.label$
+                    </a>
+                  </li>
+                  $endfor$
+                </ul>
                 </div>
               </div>
             </div>
