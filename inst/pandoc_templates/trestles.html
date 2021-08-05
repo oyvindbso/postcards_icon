@@ -58,14 +58,66 @@
                 </ul>
               </div>
               <div id="icon-list-new">
+                $for(twitter)$
                 <ul class="list-inline">
                   <li class="list-inline-item">
-                    <a href=$linkedin.url$>
-                    <i class="fas fa-project-diagram">
+                    <a href=$twitter.url$>
+                    <i class="fab fa-twitter big-icon">
                     </i> 
-                      $linkedin.label$
+                      $twitter.label$
                     </a>
                   </li>
+                  $endfor$
+                  $for(orcid)$
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <a href=$orcid.url$>
+                    <i class="fab fa-orcid big-icon">
+                    </i> 
+                      $orcid.label$
+                    </a>
+                  </li>
+                  $endfor$
+                  $for(osf)$
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <a href=$osf.url$>
+                    <i class="ai ai-osf big-icon">
+                    </i> 
+                      $osf.label$
+                    </a>
+                  </li>
+                  $endfor$
+                $for(scholar)$
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <a href=$scholar.url$>
+                    <i class="ai ai-google-scholar big-icon">
+                    </i> 
+                      $scholar.label$
+                    </a>
+                  </li>
+                  $endfor$
+                $for(researchgate)$
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <a href=$researchgate.url$>
+                    <i class="ai ai-researchgate big-icon">
+                    </i> 
+                      $researchgate.label$
+                    </a>
+                  </li>
+                  $endfor$
+                   $for(academia)$
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <a href=$academia.url$>
+                    <i class="ai ai-academia big-icon">
+                    </i> 
+                      $academia.label$
+                    </a>
+                  </li>
+                  $endfor$
                 </ul>
               </div>
             </div>
